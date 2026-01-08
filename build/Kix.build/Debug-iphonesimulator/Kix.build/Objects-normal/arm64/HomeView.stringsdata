@@ -1,0 +1,40 @@
+{
+  "source": "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Home/HomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "THE KIX LIST",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "Curated Performance Shoes",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 21
+        }
+      },
+      {
+        "comment": "",
+        "key": "NO IMAGE",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 87
+        }
+      },
+      {
+        "comment": "",
+        "key": "$%lld",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 100
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,23 @@
+{
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/KixApp.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Persistence.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/DerivedSources/CoreDataGenerated/Kix/Item+CoreDataClass.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.swiftdeps"
+  }
+}

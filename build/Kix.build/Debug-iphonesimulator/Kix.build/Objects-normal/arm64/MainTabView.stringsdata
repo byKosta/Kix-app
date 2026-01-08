@@ -1,0 +1,48 @@
+{
+  "source": "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Navigation/MainTabView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Home",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 10
+        }
+      },
+      {
+        "comment": "",
+        "key": "Notes",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Favorites",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 24
+        }
+      },
+      {
+        "comment": "",
+        "key": "Menu",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cart",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 38
+        }
+      }
+    ]
+  },
+  "version": 1
+}

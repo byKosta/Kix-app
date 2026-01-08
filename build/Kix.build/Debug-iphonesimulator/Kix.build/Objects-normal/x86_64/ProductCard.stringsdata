@@ -1,0 +1,24 @@
+{
+  "source": "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Home/ProductCard.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "No Image",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 30
+        }
+      },
+      {
+        "comment": "",
+        "key": "$%@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 57
+        }
+      }
+    ]
+  },
+  "version": 1
+}

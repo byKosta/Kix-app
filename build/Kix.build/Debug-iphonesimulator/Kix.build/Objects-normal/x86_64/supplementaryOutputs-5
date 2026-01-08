@@ -1,0 +1,30 @@
+{
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Components/KixLogoView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Components/LoginLogoView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/AppState.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/CartItem.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.swiftdeps"
+  }
+}

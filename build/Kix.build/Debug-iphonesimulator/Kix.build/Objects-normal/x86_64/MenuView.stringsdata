@@ -1,0 +1,72 @@
+{
+  "source": "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Menu/MenuView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Menu",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "Profile",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "Settings",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": "Dark Mode",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 33
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logout",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logout",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Are you sure you want to logout? (mock)",
+        "location": {
+          "startingColumn": 68,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Logout",
+        "location": {
+          "startingColumn": 145,
+          "startingLine": 49
+        }
+      }
+    ]
+  },
+  "version": 1
+}

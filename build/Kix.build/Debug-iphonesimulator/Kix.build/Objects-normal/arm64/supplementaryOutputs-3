@@ -1,0 +1,23 @@
+{
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/NotesManager.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/NotesManager.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/NotesManager.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/NotesManager.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/NotesManager.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/NotesManager.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/Product.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Product.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Product.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Product.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Product.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Product.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Theme/Colors.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Colors.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Colors.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Colors.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Colors.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/arm64/Colors.swiftdeps"
+  }
+}

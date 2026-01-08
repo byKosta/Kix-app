@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>colors</key>
+	<array/>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameImage</string>
+			<key>relativePath</key>
+			<string>./Image.imageset</string>
+			<key>swiftSymbol</key>
+			<string>image</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameImage1</string>
+			<key>relativePath</key>
+			<string>./Image 1.imageset</string>
+			<key>swiftSymbol</key>
+			<string>image1</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAdizeroadiospro3</string>
+			<key>relativePath</key>
+			<string>./adizeroadiospro3.imageset</string>
+			<key>swiftSymbol</key>
+			<string>adizeroadiospro3</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameAitzoompegasus40</string>
+			<key>relativePath</key>
+			<string>./aitzoompegasus40.imageset</string>
+			<key>swiftSymbol</key>
+			<string>aitzoompegasus40</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameBondi8</string>
+			<key>relativePath</key>
+			<string>./bondi8.imageset</string>
+			<key>swiftSymbol</key>
+			<string>bondi8</string>
+		</dict>
+		<dict>
+			<key>catalogPath</key>
+			<string>/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Assets.xcassets</string>
+			<key>objcSymbol</key>
+			<string>ACImageNameClifton9</string>
+			<key>relativePath</key>
+			<string>./clifton9.imageset</string>
+			<key>swiftSymbol</key>
+			<string>clifton9</string>
+		</dict>
+	</array>
+	<key>symbols</key>
+	<array/>
+</dict>
+</plist>

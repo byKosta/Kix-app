@@ -1,0 +1,319 @@
+{
+  "" : {
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix-primary.dia",
+    "emit-module-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix-primary-emit-module.dia",
+    "pch" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix-primary.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/ContentView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ContentView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ContentView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ContentView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ContentView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ContentView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ContentView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Components/KixLogoView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixLogoView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Components/LoginLogoView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginLogoView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/AppState.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AppState~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/CartItem.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartItem~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/CartManager.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartManager.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartManager.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartManager.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartManager.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartManager.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartManager.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartManager.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartManager~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/FavoritesManager.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesManager.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesManager.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesManager.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesManager.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesManager.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesManager.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesManager.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesManager~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/Note.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Note.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Note.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Note.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Note.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Note.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Note.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Note.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Note~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/NotesManager.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesManager.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesManager.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesManager.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesManager.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesManager.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesManager.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesManager.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesManager~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Models/Product.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Product.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Product.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Product.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Product.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Product.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Product.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Product.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Product~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Theme/Colors.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Colors.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Colors.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Colors.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Colors.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Colors.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Colors.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Colors.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Colors~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Theme/Typography.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Typography.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Typography.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Typography.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Typography.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Typography.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Typography.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Typography.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Typography~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Auth/AuthViewModel.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AuthViewModel.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AuthViewModel.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AuthViewModel.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AuthViewModel.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AuthViewModel.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AuthViewModel.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AuthViewModel.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/AuthViewModel~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Auth/LoginView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/LoginView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Auth/RegisterView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/RegisterView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/RegisterView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/RegisterView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/RegisterView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/RegisterView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/RegisterView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/RegisterView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/RegisterView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Cart/CartView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/CartView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Favorites/FavoritesView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/FavoritesView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Home/HomeView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/HomeView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/HomeView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/HomeView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/HomeView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/HomeView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/HomeView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/HomeView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/HomeView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Home/ProductCard.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductCard.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductCard.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductCard.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductCard.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductCard.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductCard.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductCard.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductCard~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Home/ProductDetailView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductDetailView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductDetailView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductDetailView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductDetailView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductDetailView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductDetailView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductDetailView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/ProductDetailView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Menu/MenuView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Notes/NotesView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/KixApp.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/KixApp~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Navigation/MainTabView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Persistence.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Persistence~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Services/MockData.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MockData.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MockData.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MockData.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MockData.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MockData.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MockData.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MockData.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MockData~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Services/UserStore.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/UserStore.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/UserStore.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/UserStore.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/UserStore.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/UserStore.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/UserStore.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/UserStore.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/UserStore~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/DerivedSources/CoreDataGenerated/Kix/Item+CoreDataClass.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataClass~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/DerivedSources/CoreDataGenerated/Kix/Item+CoreDataProperties.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataProperties.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataProperties.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataProperties.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataProperties.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataProperties.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataProperties.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataProperties.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Item+CoreDataProperties~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/DerivedSources/CoreDataGenerated/Kix/Kix+CoreDataModel.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix+CoreDataModel.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix+CoreDataModel.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix+CoreDataModel.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix+CoreDataModel.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix+CoreDataModel.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix+CoreDataModel.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix+CoreDataModel.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/Kix+CoreDataModel~partial.swiftmodule"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

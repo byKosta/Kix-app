@@ -1,0 +1,24 @@
+{
+  "source": "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Favorites/FavoritesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Favorites",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 10
+        }
+      },
+      {
+        "comment": "",
+        "key": "No favorite shoes yet.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 15
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,23 @@
+{
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Menu/MenuView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MenuView.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Notes/NotesView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/NotesView.swiftdeps"
+  },
+  "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Navigation/MainTabView.swift" : {
+    "const-values" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.swiftconstvalues",
+    "dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.d",
+    "diagnostics" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.dia",
+    "object" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.o",
+    "swift-dependencies" : "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/build/Kix.build/Debug-iphonesimulator/Kix.build/Objects-normal/x86_64/MainTabView.swiftdeps"
+  }
+}

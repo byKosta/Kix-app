@@ -1,0 +1,56 @@
+{
+  "source": "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Features/Notes/NotesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Notes",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 12
+        }
+      },
+      {
+        "comment": "",
+        "key": "No notes yet.",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add a note...",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit note",
+        "location": {
+          "startingColumn": 47,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 47
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 48,
+          "startingLine": 53
+        }
+      }
+    ]
+  },
+  "version": 1
+}

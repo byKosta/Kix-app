@@ -12,11 +12,30 @@ struct ProductCard: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
             ZStack(alignment: .topTrailing) {
-                Image(product.imageName)
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 180)
-                    .cornerRadius(16)
+                // Image with fallback
+                Group {
+                    if let uiImage = UIImage(named: product.imageName) {
+                        Image(uiImage: uiImage)
+                            .resizable()
+                            .scaledToFit()
+                    } else {
+                        // Fallback placeholder
+                        RoundedRectangle(cornerRadius: 16)
+                            .fill(Color.gray.opacity(0.2))
+                            .overlay(
+                                VStack {
+                                    Image(systemName: "photo")
+                                        .font(.largeTitle)
+                                        .foregroundColor(.gray)
+                                    Text("No Image")
+                                        .font(.caption)
+                                        .foregroundColor(.gray)
+                                }
+                            )
+                    }
+                }
+                .frame(height: 180)
+                .cornerRadius(16)
                 Button(action: {
                     isFavorite.toggle()
                     // TODO: Update favorite state in model/service

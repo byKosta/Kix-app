@@ -1,0 +1,24 @@
+{
+  "source": "/Users/bykosta/Projects/Mobile Automatest testing iOS/Kix/Kix/Core/Components/KixLogoView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "KIX",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 43
+        }
+      },
+      {
+        "comment": "",
+        "key": "SNEAKER STORE",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 51
+        }
+      }
+    ]
+  },
+  "version": 1
+}
