@@ -1,8 +1,10 @@
-# Kix Sneaker Store (SwiftUI Test App)
+# Kix Sneaker Store (A SwiftUI Test Application)
 
-Kix is a sample e-commerce application for a modern sneaker store, built entirely with SwiftUI. This project was developed as a testbed for practicing and demonstrating advanced iOS development concepts, with a primary focus on creating a robust and highly testable application.
+**This is a test application, created specifically for practicing and demonstrating UI and Unit testing in a SwiftUI environment.**
 
+Kix is a sample e-commerce app for a modern sneaker store. Its primary purpose is to serve as a realistic, hands-on project for writing, running, and maintaining a comprehensive test suite using XCTest. The entire architecture and UI are designed with testability as the top priority.
 
+![Kix App Screenshot](https://raw.githubusercontent.com/byKosta/Kix-app/main/kix-promo.png) 
 *(Feel free to replace this with your own screenshot)*
 
 ---
