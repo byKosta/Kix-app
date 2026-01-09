@@ -1,7 +1,7 @@
 
 
-![Gemini Image](docs/images/gemini.png)
 
+![Gemini Image](docs/images/gemini.png)
 
 
 
