@@ -1,6 +1,6 @@
 
-![Uploading logo.jpg…]()
 
+![Kix App Screenshot](Kix/Kix/Assets.xcassets/Image.imageset/Image.png)
 
 
 
