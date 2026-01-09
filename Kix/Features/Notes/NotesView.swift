@@ -3,23 +3,33 @@ import SwiftUI
 struct NotesView: View {
     @StateObject private var notesManager = NotesManager()
     @State private var newNoteText: String = ""
-    @State private var editingNote: Note? = nil
+    @State private var editingNote: NoteItem? = nil
     @State private var editingText: String = ""
-    
+    @State private var searchText: String = ""
+
+    private var filteredNotes: [NoteItem] {
+        let query = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
+        if query.isEmpty { return notesManager.notes }
+        return notesManager.notes.filter { $0.text.localizedCaseInsensitiveContains(query) }
+    }
+    private var pinnedNotes: [NoteItem] {
+        filteredNotes.filter { $0.isPinned }
+    }
+    private var regularNotes: [NoteItem] {
+        filteredNotes.filter { !$0.isPinned }
+    }
+
     var body: some View {
-        NavigationView {
-            VStack(alignment: .leading) {
-                Text("Notes")
-                    .font(.largeTitle)
-                    .padding(.top, 24)
-                    .padding(.leading, 16)
+        NavigationStack {
+            VStack {
                 HStack {
                     TextField("Add a note...", text: $newNoteText)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .accessibilityIdentifier("add_note_textfield")
                     Button(action: {
-                        guard !newNoteText.trimmingCharacters(in: .whitespaces).isEmpty else { return }
-                        notesManager.addNote(text: newNoteText)
+                        let text = newNoteText.trimmingCharacters(in: .whitespacesAndNewlines)
+                        guard !text.isEmpty else { return }
+                        notesManager.addNote(text: text)
                         newNoteText = ""
                     }) {
                         Image(systemName: "plus")
@@ -31,68 +41,121 @@ struct NotesView: View {
                     .accessibilityIdentifier("add_note_button")
                 }
                 .padding([.horizontal, .bottom])
-                if notesManager.notes.isEmpty {
+
+                if filteredNotes.isEmpty {
                     Text("No notes yet.")
                         .foregroundColor(.secondary)
                         .padding()
                 } else {
                     List {
-                        ForEach(notesManager.notes) { note in
-                            VStack(alignment: .leading, spacing: 4) {
-                                if editingNote?.id == note.id {
-                                    TextField("Edit note", text: $editingText)
-                                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                                        .accessibilityIdentifier("edit_note_textfield_\(note.id)")
-                                    HStack {
-                                        Button("Save") {
-                                            notesManager.updateNote(note, newText: editingText)
-                                            editingNote = nil
-                                            editingText = ""
-                                        }
-                                        .accessibilityIdentifier("save_note_button_\(note.id)")
-                                        Button("Cancel") {
-                                            editingNote = nil
-                                            editingText = ""
-                                        }
-                                        .accessibilityIdentifier("cancel_edit_note_button_\(note.id)")
-                                    }
-                                } else {
-                                    Text(note.text)
-                                        .font(.body)
-                                    Text(note.date, style: .date)
-                                        .font(.caption)
-                                        .foregroundColor(.secondary)
-                                    HStack {
-                                        Button(action: {
-                                            editingNote = note
-                                            editingText = note.text
-                                        }) {
-                                            Image(systemName: "pencil")
-                                        }
-                                        .accessibilityIdentifier("edit_note_button_\(note.id)")
-                                        Button(action: {
-                                            notesManager.deleteNote(note)
-                                        }) {
-                                            Image(systemName: "trash")
-                                                .foregroundColor(.red)
-                                        }
-                                        .accessibilityIdentifier("delete_note_button_\(note.id)")
-                                    }
+                        if !pinnedNotes.isEmpty {
+                            Section("Pinned") {
+                                ForEach(pinnedNotes) { note in
+                                    noteRow(note)
                                 }
                             }
-                            .padding(.vertical, 4)
                         }
-                        .onDelete { indexSet in
-                            indexSet.forEach { i in
-                                let note = notesManager.notes[i]
-                                notesManager.deleteNote(note)
+                        Section("All Notes") {
+                            ForEach(regularNotes) { note in
+                                noteRow(note)
+                            }
+                            .onDelete { indexSet in
+                                indexSet.forEach { i in
+                                    let note = regularNotes[i]
+                                    notesManager.deleteNote(note)
+                                }
                             }
                         }
                     }
                     .listStyle(PlainListStyle())
                 }
             }
-            .navigationBarHidden(true)
+            .navigationTitle("Notes")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        let text = newNoteText.trimmingCharacters(in: .whitespacesAndNewlines)
+                        guard !text.isEmpty else { return }
+                        notesManager.addNote(text: text)
+                        newNoteText = ""
+                    } label: {
+                        Image(systemName: "plus.circle.fill")
+                    }
+                    .accessibilityIdentifier("add_note_toolbar_button")
+                }
+            }
+            .searchable(text: $searchText, prompt: "Search notes")
+            .sheet(item: $editingNote) { note in
+                NoteEditView(note: note, text: $editingText) { newText in
+                    notesManager.updateNote(note, newText: newText)
+                }
+            }
+        }
+    }
+
+    @ViewBuilder
+    private func noteRow(_ note: NoteItem) -> some View {
+        VStack(alignment: .leading, spacing: 4) {
+            Text(note.text)
+                .font(.body)
+            HStack(spacing: 8) {
+                if note.isPinned {
+                    Image(systemName: "pin.fill").foregroundColor(.orange)
+                }
+                Text(note.date, style: .date)
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+            }
+        }
+        .swipeActions(edge: .trailing) {
+            Button(role: .destructive) {
+                notesManager.deleteNote(note)
+            } label: {
+                Label("Delete", systemImage: "trash")
+            }
+            Button {
+                editingNote = note
+                editingText = note.text
+            } label: {
+                Label("Edit", systemImage: "pencil")
+            }
+            .tint(.blue)
+            Button {
+                notesManager.togglePin(note)
+            } label: {
+                Label(note.isPinned ? "Unpin" : "Pin", systemImage: note.isPinned ? "pin.slash" : "pin")
+            }
+            .tint(.orange)
+        }
+    }
+}
+
+struct NoteEditView: View {
+    let note: NoteItem
+    @Binding var text: String
+    var onSave: (String) -> Void
+    @Environment(\.dismiss) private var dismiss
+
+    var body: some View {
+        NavigationStack {
+            VStack {
+                TextEditor(text: $text)
+                    .padding()
+            }
+            .navigationTitle("Edit Note")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Save") {
+                        let t = text.trimmingCharacters(in: .whitespacesAndNewlines)
+                        guard !t.isEmpty else { dismiss(); return }
+                        onSave(t)
+                        dismiss()
+                    }
+                }
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
+                }
+            }
         }
     }
 }

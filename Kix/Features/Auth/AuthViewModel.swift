@@ -2,34 +2,74 @@ import Foundation
 import SwiftUI
 import Combine
 
-class AuthViewModel: ObservableObject {
+private func isValidEmail(_ email: String) -> Bool {
+    let pattern = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+    return email.range(of: pattern, options: .regularExpression) != nil
+}
+
+@MainActor class AuthViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var username: String = ""
     @Published var confirmPassword: String = ""
     @Published var errorMessage: String? = nil
     @Published var isAuthenticated: Bool = false
+    @Published var isLoading: Bool = false
     
     func login() {
-        if email.isEmpty || password.isEmpty {
+        Task { [weak self] in
+            await self?.loginAsync()
+        }
+    }
+    
+    func loginAsync() async {
+        let normalizedEmail = email.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        email = normalizedEmail
+        errorMessage = nil
+        guard !normalizedEmail.isEmpty, !password.isEmpty else {
             errorMessage = "Please enter email and password."
-        } else if email == "test@test.com" && password == "password" {
-            errorMessage = nil
+            return
+        }
+        guard isValidEmail(normalizedEmail) else {
+            errorMessage = "Please enter a valid email."
+            return
+        }
+        isLoading = true
+        defer { isLoading = false }
+        // Simulate network delay
+        try? await Task.sleep(nanoseconds: 600_000_000)
+        if normalizedEmail == "test@test.com" && password == "password" {
             isAuthenticated = true
+            errorMessage = nil
         } else {
             errorMessage = "Invalid credentials."
         }
     }
     
-    func register() {
-        if email.isEmpty || username.isEmpty || password.isEmpty || confirmPassword.isEmpty {
+    func register(completion: () -> Void) {
+        let normalizedEmail = email.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        email = normalizedEmail
+        if normalizedEmail.isEmpty || username.isEmpty || password.isEmpty || confirmPassword.isEmpty {
             errorMessage = "Please fill all fields."
-        } else if password != confirmPassword {
-            errorMessage = "Passwords do not match."
-        } else {
-            errorMessage = nil
-            // Simulate registration success
+            return
         }
+        
+        if password != confirmPassword {
+            errorMessage = "Passwords do not match."
+            return
+        }
+        
+        // Check if user already exists
+        if UserStore.shared.userExists(email: normalizedEmail) {
+            errorMessage = "User with this email already exists."
+            return
+        }
+        
+        // Add new user
+        let newUser = User(email: normalizedEmail, username: username, password: password)
+        UserStore.shared.addUser(newUser)
+        errorMessage = nil
+        completion()
     }
     
     func reset() {
@@ -41,3 +81,4 @@ class AuthViewModel: ObservableObject {
         isAuthenticated = false
     }
 }
+

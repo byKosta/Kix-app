@@ -21,7 +21,7 @@ class UserStore {
             users = decoded
         } else {
             // Add default user
-            users = [User(email: "test@test.com", username: "TestUser", password: "password")]
+            users = [User(email: "test@kixapp.com", username: "TestUser", password: "password")]
             save()
         }
     }
@@ -46,7 +46,7 @@ class UserStore {
     }
     
     func reset() {
-        users = [User(email: "test@test.com", username: "TestUser", password: "password")]
+        users = [User(email: "test@kixapp.com", username: "TestUser", password: "password")]
         save()
     }
 }
