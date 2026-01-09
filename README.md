@@ -1,3 +1,9 @@
+
+![Uploading logo.jpg…]()
+
+
+
+
 # Kix Sneaker Store (A SwiftUI Test Application)
 
 **This is a test application, created specifically for practicing and demonstrating UI and Unit testing in a SwiftUI environment.**
