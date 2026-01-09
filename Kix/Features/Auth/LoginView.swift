@@ -1,14 +1,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @EnvironmentObject var viewModel: AuthViewModel
+    @EnvironmentObject var appState: AppState
+    @StateObject private var viewModel = AuthViewModel()
     @State private var showRegister: Bool = false
-    @State private var showPassword: Bool = false // Переменная состояния для показа пароля
-    
-    private var canSubmit: Bool {
-        !viewModel.email.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty &&
-        !viewModel.password.isEmpty
-    }
     
     // Цвета бренда
     let brandGradient = LinearGradient(
@@ -59,19 +54,8 @@ struct LoginView: View {
                     customField(title: "Email", text: $viewModel.email, isSecure: false)
                         .accessibilityIdentifier("login_email_field")
                     
-                    // Поле пароля с кнопкой показа/скрытия пароля
-                    ZStack(alignment: .trailing) {
-                        customField(title: "Password", text: $viewModel.password, isSecure: !showPassword)
-                            .accessibilityIdentifier("login_password_field")
-                        
-                        // Кнопка показа/скрытия пароля
-                        Button(action: { showPassword.toggle() }) {
-                            Image(systemName: showPassword ? "eye.slash" : "eye")
-                                .foregroundColor(.gray)
-                                .padding(.trailing, 20)
-                        }
-                        .buttonStyle(PlainButtonStyle()) // Убираем стандартный стиль кнопки
-                    }
+                    customField(title: "Password", text: $viewModel.password, isSecure: true)
+                        .accessibilityIdentifier("login_password_field")
                 }
                 
                 if let error = viewModel.errorMessage {
@@ -81,27 +65,23 @@ struct LoginView: View {
                 }
                 
                 // 4. Кнопка Login с эффектом Liquid Mirror
-                Button(action: { viewModel.login() }) {
-                    ZStack {
-                        if viewModel.isLoading {
-                            ProgressView()
-                                .tint(.white)
-                        } else {
-                            Text("SIGN IN")
-                                .font(.system(size: 18, weight: .bold, design: .rounded))
-                                .kerning(2)
-                                .foregroundColor(.white)
-                        }
+                Button(action: {
+                    viewModel.login {
+                        appState.isAuthenticated = true
                     }
-                    .frame(maxWidth: .infinity)
-                    .frame(height: 60)
-                    .background(brandGradient)
-                    .cornerRadius(20)
-                    .shadow(color: .blue.opacity(0.4), radius: 15, y: 8)
+                }) {
+                    Text("SIGN IN")
+                        .font(.system(size: 18, weight: .bold, design: .rounded))
+                        .kerning(2)
+                        .foregroundColor(.white)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 60)
+                        .background(brandGradient)
+                        .cornerRadius(20)
+                        .shadow(color: .blue.opacity(0.4), radius: 15, y: 8)
                 }
                 .padding(.top, 10)
                 .accessibilityIdentifier("login_button")
-                .disabled(viewModel.isLoading || !canSubmit)
                 
                 // 5. Register Button
                 Button(action: { showRegister = true }) {
@@ -142,8 +122,6 @@ struct LoginView: View {
                 TextField(title, text: text)
             }
         }
-        .textInputAutocapitalization(.never)
-        .autocorrectionDisabled(true)
         .padding(.horizontal, 20)
         .frame(height: 60)
         .background(Color(.systemGray6).opacity(0.5))

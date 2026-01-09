@@ -6,6 +6,7 @@ struct MenuUser {
 }
 
 struct MenuView: View {
+    @EnvironmentObject var appState: AppState
     @State private var isDarkMode: Bool = false
     @State private var showLogoutAlert: Bool = false
     var user: MenuUser = MenuUser(username: "JohnDoe", email: "john.doe@example.com")
@@ -46,7 +47,14 @@ struct MenuView: View {
                     }
                     .accessibilityIdentifier("logout_button")
                     .alert(isPresented: $showLogoutAlert) {
-                        Alert(title: Text("Logout"), message: Text("Are you sure you want to logout? (mock)"), primaryButton: .destructive(Text("Logout")), secondaryButton: .cancel())
+                        Alert(
+                            title: Text("Logout"),
+                            message: Text("Are you sure you want to logout?"),
+                            primaryButton: .destructive(Text("Logout")) {
+                                appState.isAuthenticated = false
+                            },
+                            secondaryButton: .cancel()
+                        )
                     }
                 }
             }
@@ -57,4 +65,5 @@ struct MenuView: View {
 
 #Preview {
     MenuView()
+        .environmentObject(AppState())
 }

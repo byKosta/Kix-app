@@ -1,26 +1,19 @@
-//
-//  ContentView.swift
-//  Kix
-//
-//  Created by Konstanty Halets on 06/01/2026.
-//
-
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var authViewModel = AuthViewModel()
+    @EnvironmentObject var appState: AppState
 
     var body: some View {
-        if authViewModel.isAuthenticated {
+        if appState.isAuthenticated {
             MainTabView()
-                .environmentObject(authViewModel)
         } else {
             LoginView()
-                .environmentObject(authViewModel)
         }
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView().environmentObject(AppState())
+    }
 }
