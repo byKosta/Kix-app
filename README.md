@@ -1,6 +1,7 @@
 
 
-![Kix App Screenshot](Kix/Kix/Assets.xcassets/Image.imageset/Image.png)
+![Gemini Image](docs/images/gemini.png)
+
 
 
 
