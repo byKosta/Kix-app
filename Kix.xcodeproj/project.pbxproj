@@ -45,11 +45,6 @@
 			path = KixUITests;
 			sourceTree = "<group>";
 		};
-		2A79A8BF2F1192B500A03608 /* Docs */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Docs;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +75,6 @@
 		2A5E9AC22F0D1FEA0058A5E7 = {
 			isa = PBXGroup;
 			children = (
-				2A79A8BF2F1192B500A03608 /* Docs */,
 				2A5E9ACD2F0D1FEA0058A5E7 /* Kix */,
 				2A5E9AE02F0D1FEB0058A5E7 /* KixTests */,
 				2A5E9AEA2F0D1FEB0058A5E7 /* KixUITests */,
@@ -115,7 +109,6 @@
 			);
 			fileSystemSynchronizedGroups = (
 				2A5E9ACD2F0D1FEA0058A5E7 /* Kix */,
-				2A79A8BF2F1192B500A03608 /* Docs */,
 			);
 			name = Kix;
 			packageProductDependencies = (
