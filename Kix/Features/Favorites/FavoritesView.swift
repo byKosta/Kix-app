@@ -1,29 +1,52 @@
 import SwiftUI
 
 struct FavoritesView: View {
+    // Revert to local state to avoid missing EnvironmentObject crashes
     @StateObject private var favoritesManager = FavoritesManager()
     @State private var selectedProduct: Product? = nil
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
+            VStack(alignment: .center, spacing: 0) {
+                // Header centered with gradient to match Home styling
                 Text("Favorites")
-                    .font(.largeTitle)
+                    .font(.system(size: 28, weight: .bold, design: .rounded))
+                    .italic()
+                    .foregroundStyle(
+                        LinearGradient(
+                            colors: [.blue, .purple, .pink.opacity(0.9)],
+                            startPoint: .topLeading,
+                            endPoint: .bottomTrailing
+                        )
+                    )
                     .padding(.top, 24)
-                    .padding(.leading, 16)
+                    .accessibilityIdentifier("favorites_header")
+                
                 if favoritesManager.favorites.isEmpty {
-                    Text("No favorite shoes yet.")
-                        .foregroundColor(.secondary)
-                        .padding()
+                    // Empty state message centered
+                    VStack(spacing: 8) {
+                        Image(systemName: "heart")
+                            .font(.system(size: 40, weight: .semibold))
+                            .foregroundColor(.purple.opacity(0.7))
+                        Text("Nothing here yet")
+                            .font(.system(size: 16, weight: .semibold, design: .rounded))
+                            .foregroundColor(.secondary)
+                            .accessibilityIdentifier("favorites_empty_label")
+                        Text("Add your favorite shoes from Home")
+                            .font(.system(size: 14, weight: .regular, design: .rounded))
+                            .foregroundColor(.secondary)
+                    }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .padding()
                 } else {
                     List {
                         ForEach(favoritesManager.favorites) { product in
                             HStack {
                                 Image(product.imageName)
                                     .resizable()
-                                    .scaledToFit()
+                                    .scaledToFill()
                                     .frame(width: 60, height: 60)
-                                    .cornerRadius(10)
+                                    .clipped()
                                 VStack(alignment: .leading) {
                                     Text(product.name)
                                         .font(.headline)
@@ -59,12 +82,16 @@ struct FavoritesView: View {
             .sheet(item: $selectedProduct) { product in
                 NavigationView {
                     ProductDetailView(product: product)
+                        .environmentObject(favoritesManager)
                 }
             }
         }
+        // Inject environment object so children like ProductCard can access it
+        .environmentObject(favoritesManager)
     }
 }
 
 #Preview {
     FavoritesView()
+        .environmentObject(FavoritesManager())
 }
