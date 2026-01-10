@@ -18,10 +18,23 @@ class UserStore {
     func load() {
         if let data = UserDefaults.standard.data(forKey: key),
            let decoded = try? JSONDecoder().decode([User].self, from: data) {
-            users = decoded
+            // Normalize any previously stored emails to lowercase to enforce case-insensitive behavior
+            users = decoded.map { user in
+                let lowercasedEmail = user.email.lowercased()
+                if lowercasedEmail != user.email {
+                    return User(email: lowercasedEmail, username: user.username, password: user.password)
+                }
+                return user
+            }
+            save()
         } else {
-            // Add default user
-            users = [User(email: "test@kixapp.com", username: "TestUser", password: "password")]
+            // Add default users (emails stored lowercased)
+            users = [
+                User(email: "test@kixapp.com", username: "TestUser", password: "password"),
+                // Uncomment or extend defaults if needed
+                // User(email: "manager@kixapp.com", username: "Manager", password: "password"),
+                // User(email: "guest@kixapp.com", username: "Guest", password: "password"),
+            ]
             save()
         }
     }
@@ -33,16 +46,20 @@ class UserStore {
     }
     
     func addUser(_ user: User) {
-        users.append(user)
+        // Ensure email stored in lowercase
+        let normalized = User(email: user.email.lowercased(), username: user.username, password: user.password)
+        users.append(normalized)
         save()
     }
     
     func user(email: String, password: String) -> User? {
-        users.first { $0.email == email && $0.password == password }
+        let normalizedEmail = email.lowercased()
+        return users.first { $0.email.lowercased() == normalizedEmail && $0.password == password }
     }
     
     func userExists(email: String) -> Bool {
-        users.contains { $0.email == email }
+        let normalizedEmail = email.lowercased()
+        return users.contains { $0.email.lowercased() == normalizedEmail }
     }
     
     func reset() {

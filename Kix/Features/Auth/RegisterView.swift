@@ -57,15 +57,24 @@ struct RegisterView: View {
                 // 3. Поля ввода в стиле "Liquid" (как в LoginView)
                 VStack(spacing: 18) {
                     customField(title: "Email", text: $email, isSecure: false)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled(true)
+                        .keyboardType(.emailAddress)
                         .accessibilityIdentifier("register_email_field")
                     
                     customField(title: "Username", text: $username, isSecure: false)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled(true)
                         .accessibilityIdentifier("register_username_field")
                     
                     customField(title: "Password", text: $password, isSecure: true)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled(true)
                         .accessibilityIdentifier("register_password_field")
                     
                     customField(title: "Confirm Password", text: $confirmPassword, isSecure: true)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled(true)
                         .accessibilityIdentifier("register_confirm_password_field")
                 }
                 
@@ -142,7 +151,8 @@ struct RegisterView: View {
             } else {
                 TextField(title, text: text)
                     .keyboardType(title == "Email" ? .emailAddress : .default)
-                    .autocapitalization(.none)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled(true)
             }
         }
         .padding(.horizontal, 20)

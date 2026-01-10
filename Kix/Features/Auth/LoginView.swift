@@ -4,6 +4,7 @@ struct LoginView: View {
     @EnvironmentObject var appState: AppState
     @StateObject private var viewModel = AuthViewModel()
     @State private var showRegister: Bool = false
+    @State private var showPassword: Bool = false
     
     // Цвета бренда
     let brandGradient = LinearGradient(
@@ -52,10 +53,42 @@ struct LoginView: View {
                 // 3. Поля ввода в стиле "Liquid" (мягкие и закругленные)
                 VStack(spacing: 18) {
                     customField(title: "Email", text: $viewModel.email, isSecure: false)
+                        .textInputAutocapitalization(.never)
+                        .autocorrectionDisabled(true)
+                        .keyboardType(.emailAddress)
                         .accessibilityIdentifier("login_email_field")
                     
-                    customField(title: "Password", text: $viewModel.password, isSecure: true)
+                    // Password with show/hide toggle
+                    HStack(spacing: 12) {
+                        Group {
+                            if showPassword {
+                                TextField("Password", text: $viewModel.password)
+                                    .textContentType(.password)
+                                    .textInputAutocapitalization(.never)
+                                    .autocorrectionDisabled(true)
+                            } else {
+                                SecureField("Password", text: $viewModel.password)
+                                    .textContentType(.password)
+                                    .textInputAutocapitalization(.never)
+                                    .autocorrectionDisabled(true)
+                            }
+                        }
                         .accessibilityIdentifier("login_password_field")
+                        
+                        Button(action: { showPassword.toggle() }) {
+                            Image(systemName: showPassword ? "eye.slash.fill" : "eye.fill")
+                                .foregroundColor(.gray)
+                                .accessibilityLabel(showPassword ? "Hide password" : "Show password")
+                        }
+                    }
+                    .padding(.horizontal, 20)
+                    .frame(height: 60)
+                    .background(Color(.systemGray6).opacity(0.5))
+                    .cornerRadius(18)
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 18)
+                            .stroke(LinearGradient(colors: [.blue.opacity(0.2), .purple.opacity(0.2)], startPoint: .topLeading, endPoint: .bottomTrailing), lineWidth: 1.5)
+                    )
                 }
                 
                 if let error = viewModel.errorMessage {
@@ -118,8 +151,12 @@ struct LoginView: View {
         Group {
             if isSecure {
                 SecureField(title, text: text)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled(true)
             } else {
                 TextField(title, text: text)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled(true)
             }
         }
         .padding(.horizontal, 20)
