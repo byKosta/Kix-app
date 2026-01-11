@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct AuthRouterView: View {
     @EnvironmentObject var appState: AppState
 
     var body: some View {
@@ -12,8 +12,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView().environmentObject(AppState())
-    }
+#Preview {
+    AuthRouterView()
+        .environmentObject(AppState())
+        .environmentObject(AuthViewModel())
 }
