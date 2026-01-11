@@ -114,21 +114,24 @@ struct NewProductCard: View {
                     }
                 }
 
+                // Heart overlay at top-right
                 VStack {
-                    Spacer()
                     HStack {
                         Spacer()
-                        Text("$\(Int(product.price))")
-                            .font(.system(.headline, design: .rounded))
-                            .foregroundColor(.white)
-                            .padding(.horizontal, 16)
-                            .padding(.vertical, 8)
-                            .background(priceGradient)
-                            .clipShape(Capsule())
-                            .padding(.horizontal, 12)
-                            .padding(.bottom, 4)
+                        Button(action: { /* toggle local favorite if needed */ }) {
+                            Image(systemName: product.isFavorite ? "heart.fill" : "heart")
+                                .foregroundColor(product.isFavorite ? .red : .gray)
+                                .padding(8)
+                                .background(Color.white)
+                                .clipShape(Circle())
+                                .shadow(radius: 2)
+                        }
+                        .accessibilityIdentifier("home_card_favorite_\(product.id.uuidString)")
                     }
+                    Spacer()
                 }
+                .padding(.horizontal, 12)
+                .padding(.top, 8)
             }
 
             // Product info
