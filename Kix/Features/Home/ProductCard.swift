@@ -2,12 +2,7 @@ import SwiftUI
 
 struct ProductCard: View {
     let product: Product
-    @State private var isFavorite: Bool
-    
-    init(product: Product) {
-        self.product = product
-        self._isFavorite = State(initialValue: product.isFavorite)
-    }
+    @EnvironmentObject private var favoritesManager: FavoritesManager
     
     var body: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -37,11 +32,10 @@ struct ProductCard: View {
                 .frame(height: 180)
                 .cornerRadius(16)
                 Button(action: {
-                    isFavorite.toggle()
-                    // TODO: Update favorite state in model/service
+                    favoritesManager.toggleFavorite(product)
                 }) {
-                    Image(systemName: isFavorite ? "heart.fill" : "heart")
-                        .foregroundColor(isFavorite ? .red : .gray)
+                    Image(systemName: favoritesManager.isFavorite(product) ? "heart.fill" : "heart")
+                        .foregroundColor(favoritesManager.isFavorite(product) ? .pink : .gray)
                         .padding(8)
                         .background(Color.white.opacity(0.7))
                         .clipShape(Circle())
