@@ -6,11 +6,13 @@ class TabSelection: ObservableObject {
 }
 
 struct MainTabView: View {
+    @EnvironmentObject var appState: AppState
     @StateObject private var tabSelection = TabSelection()
     
     var body: some View {
         TabView(selection: $tabSelection.selectedTab) {
             HomeView()
+                .environmentObject(appState.favoritesManager)
                 .tabItem {
                     Label("Home", systemImage: tabSelection.selectedTab == 0 ? "house.fill" : "house")
                 }
@@ -26,6 +28,7 @@ struct MainTabView: View {
                 .accessibilityIdentifier("tab_notes")
             
             FavoritesView()
+                .environmentObject(appState.favoritesManager)
                 .tabItem {
                     Label("Favorites", systemImage: tabSelection.selectedTab == 2 ? "heart.fill" : "heart")
                 }

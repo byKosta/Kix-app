@@ -1,8 +1,7 @@
 import SwiftUI
 
 struct FavoritesView: View {
-    // Revert to local state to avoid missing EnvironmentObject crashes
-    @StateObject private var favoritesManager = FavoritesManager()
+    @EnvironmentObject var favoritesManager: FavoritesManager
     @State private var selectedProduct: Product? = nil
     
     var body: some View {
@@ -20,7 +19,7 @@ struct FavoritesView: View {
                         )
                     )
                     .padding(.top, 24)
-                    .accessibilityIdentifier("favorites_header")
+                    .accessibilityIdentifier("favorites_title")
                 
                 if favoritesManager.favorites.isEmpty {
                     // Empty state message centered
@@ -86,8 +85,6 @@ struct FavoritesView: View {
                 }
             }
         }
-        // Inject environment object so children like ProductCard can access it
-        .environmentObject(favoritesManager)
     }
 }
 

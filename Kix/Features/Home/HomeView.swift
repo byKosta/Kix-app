@@ -2,6 +2,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var products: [Product] = MockData.products
+    @EnvironmentObject var appState: AppState
     // Brand gradient (purple → blue) with subtle green accents in cards
     let brandGradient = LinearGradient(colors: [.purple, .blue], startPoint: .leading, endPoint: .trailing)
     
@@ -52,6 +53,7 @@ struct HomeView: View {
                                 )
                                 .padding(.horizontal)
                                 .accessibilityIdentifier("home_product_card_\(product.id.uuidString)")
+                                .environmentObject(appState.favoritesManager)
                             }
                         }
                         .padding(.top, 10)
@@ -69,6 +71,8 @@ struct NewProductCard: View {
     let product: Product
     var onEdit: (Product) -> Void
     var onDelete: () -> Void
+
+    @EnvironmentObject private var favoritesManager: FavoritesManager
 
     @State private var isPressed = false
     @State private var showMenu = false
@@ -118,9 +122,9 @@ struct NewProductCard: View {
                 VStack {
                     HStack {
                         Spacer()
-                        Button(action: { /* toggle local favorite if needed */ }) {
-                            Image(systemName: product.isFavorite ? "heart.fill" : "heart")
-                                .foregroundColor(product.isFavorite ? .red : .gray)
+                        Button(action: { favoritesManager.toggleFavorite(product) }) {
+                            Image(systemName: favoritesManager.isFavorite(product) ? "heart.fill" : "heart")
+                                .foregroundColor(favoritesManager.isFavorite(product) ? .pink : .gray)
                                 .padding(8)
                                 .background(Color.white)
                                 .clipShape(Circle())
