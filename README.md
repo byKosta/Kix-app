@@ -2,6 +2,8 @@
 
 
 # Kix Sneaker Store (A SwiftUI Test Application)
+### 🏷 Tags & Keywords
+`iOS Development` `SwiftUI Components` `Mobile Portfolio` `Test Application` `Free Software` `Open Source iOS` `XCode Project`
 
 **This is a test application, created specifically for practicing and demonstrating UI and Unit testing in a SwiftUI environment.**
 
