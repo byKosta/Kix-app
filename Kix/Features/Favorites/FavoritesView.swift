@@ -9,13 +9,13 @@ struct FavoritesView: View {
             VStack(alignment: .center, spacing: 0) {
                 // Header centered with gradient to match Home styling
                 Text("Favorites")
-                    .font(.system(size: 28, weight: .bold, design: .rounded))
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
                     .italic()
                     .foregroundStyle(
                         LinearGradient(
                             colors: [.blue, .purple, .pink.opacity(0.9)],
-                            startPoint: .topLeading,
-                            endPoint: .bottomTrailing
+                            startPoint: .leading,
+                            endPoint: .trailing
                         )
                     )
                     .padding(.top, 24)

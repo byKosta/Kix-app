@@ -13,9 +13,6 @@ struct AuthRouterView: View {
 }
 
 #Preview {
-    // Preview excludes FavoritesManager due to duplicate type definitions causing ambiguous init().
-    // To re-enable, deduplicate FavoritesManager.swift files in the project and then add:
-    // .environmentObject(FavoritesManager())
     AuthRouterView()
         .environmentObject(AppState())
         .environmentObject(AuthViewModel())
