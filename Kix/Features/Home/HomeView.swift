@@ -6,6 +6,13 @@ struct HomeView: View {
     // Brand gradient (purple → blue) with subtle green accents in cards
     let brandGradient = LinearGradient(colors: [.purple, .blue], startPoint: .leading, endPoint: .trailing)
     
+    @State private var showAddSheet: Bool = false
+    @State private var newName: String = ""
+    @State private var newBrand: String = ""
+    @State private var newPriceText: String = ""
+    @State private var newDescription: String = ""
+    @State private var newImageName: String = ""
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -13,22 +20,20 @@ struct HomeView: View {
                 
                 VStack(alignment: .leading, spacing: 0) {
                     // --- HEADER ---
-                    HStack {
-                        VStack(alignment: .leading, spacing: 4) {
-                            Text("THE KIX LIST")
-                                .font(.system(size: 34, weight: .black, design: .rounded))
-                                .italic()
-                                .foregroundStyle(brandGradient)
-                            
-                            Text("Curated Performance Shoes")
-                                .font(.system(size: 14, weight: .semibold, design: .rounded))
-                                .foregroundColor(.gray)
-                        }
-                        Spacer()
-                        
-                        Image(systemName: "line.3.horizontal.decrease.circle.fill")
-                            .font(.system(size: 28))
-                            .foregroundStyle(brandGradient)
+                    VStack(alignment: .center, spacing: 4) {
+                        Text("THE KIX LIST")
+                            .font(.system(size: 32, weight: .bold, design: .rounded))
+                            .italic()
+                            .foregroundStyle(
+                                LinearGradient(colors: [.blue, .purple, .pink.opacity(0.9)],
+                                               startPoint: .leading,
+                                               endPoint: .trailing)
+                            )
+                            .frame(maxWidth: .infinity, alignment: .center)
+                        Text("Curated Performance Shoes")
+                            .font(.system(size: 14, weight: .semibold, design: .rounded))
+                            .foregroundColor(.gray)
+                            .frame(maxWidth: .infinity, alignment: .center)
                     }
                     .padding(.horizontal)
                     .padding(.top, 20)
@@ -61,7 +66,68 @@ struct HomeView: View {
                     }
                 }
             }
-            .navigationBarHidden(true)
+//            .toolbar {
+//                ToolbarItem(placement: .navigationBarTrailing) {
+//                    Button(action: { showAddSheet = true }) {
+//                        Image(systemName: "plus")
+//                    }
+//                    .accessibilityIdentifier("home_add_product_button")
+//                }
+//            }
+            .sheet(isPresented: $showAddSheet) {
+                NavigationView {
+                    Form {
+                        Section(header: Text("Name")) {
+                            TextField("e.g. Vaporfly 3", text: $newName)
+                        }
+                        Section(header: Text("Brand")) {
+                            TextField("e.g. Nike", text: $newBrand)
+                        }
+                        Section(header: Text("Price")) {
+                            TextField("e.g. 199.99", text: $newPriceText)
+                                .keyboardType(.decimalPad)
+                        }
+                        Section(header: Text("Description")) {
+                            TextEditor(text: $newDescription)
+                                .frame(minHeight: 100)
+                        }
+                        Section(header: Text("Image Name (asset)")) {
+                            TextField("e.g. vaporfly3", text: $newImageName)
+                        }
+                    }
+                    .navigationTitle("New Sneaker")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {
+                            Button("Cancel") {
+                                showAddSheet = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {
+                            Button("Save") {
+                                let trimmedName = newName.trimmingCharacters(in: .whitespacesAndNewlines)
+                                let trimmedBrand = newBrand.trimmingCharacters(in: .whitespacesAndNewlines)
+                                let price = Double(newPriceText.replacingOccurrences(of: ",", with: ".")) ?? -1
+                                guard !trimmedName.isEmpty, !trimmedBrand.isEmpty, price >= 0 else { return }
+                                let product = Product(
+                                    id: UUID(),
+                                    name: trimmedName,
+                                    brand: trimmedBrand,
+                                    price: price,
+                                    imageName: newImageName.trimmingCharacters(in: .whitespacesAndNewlines),
+                                    isFavorite: false,
+                                    description: newDescription
+                                )
+                                products.insert(product, at: 0)
+                                // reset fields
+                                newName = ""; newBrand = ""; newPriceText = ""; newDescription = ""; newImageName = ""
+                                showAddSheet = false
+                            }
+                            .disabled(newName.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || newBrand.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty || Double(newPriceText.replacingOccurrences(of: ",", with: ".")) == nil)
+                        }
+                    }
+                }
+            }
         }
     }
 }

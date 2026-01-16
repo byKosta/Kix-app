@@ -24,10 +24,21 @@ struct NotesView: View {
                     .padding(.leading)
                     Spacer()
                 }
+                .padding(.top, 10)
+
+                Text("Notes")
+                    .font(.system(size: 32, weight: .bold, design: .rounded))
+                    .italic()
+                    .foregroundStyle(
+                        LinearGradient(colors: [.blue, .purple, .pink.opacity(0.9)],
+                                       startPoint: .leading,
+                                       endPoint: .trailing)
+                    )
+                    .accessibilityIdentifier("notes_title")
 
                 // Input row
                 HStack(spacing: 8) {
-                    TextField("Enter note...", text: $newNoteText)
+                    TextField("Come on, write something...", text: $newNoteText)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .textInputAutocapitalization(.sentences)
                         .disableAutocorrection(false)
@@ -56,24 +67,26 @@ struct NotesView: View {
 
                 // Content
                 if notesManager.notes.isEmpty {
-                    VStack(spacing: 10) {
+                    VStack(spacing: 12) {
                         Image(systemName: "note.text")
                             .font(.system(size: 40))
-                            .foregroundColor(.secondary)
+                            .foregroundColor(.purple.opacity(0.6))
                         Text("Nothing here yet")
-                            .font(.headline)
+                            .font(.system(size: 18, weight: .medium, design: .rounded))
                             .foregroundColor(.secondary)
                             .accessibilityIdentifier("notes_empty_label")
                         Text("Add notes to test CRUD behavior")
-                            .font(.subheadline)
-                            .foregroundColor(.secondary)
+                            .font(.system(size: 14, design: .rounded))
+                            .foregroundColor(.secondary.opacity(0.8))
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .padding(.bottom, 40) // Adjust visual center
                 } else {
                     List {
                         ForEach(notesManager.notes) { note in
                             HStack {
                                 Text(note.text)
+                                    .font(.system(.body, design: .rounded))
                                     .onTapGesture {
                                         editingNote = note
                                         newNoteText = note.text
@@ -98,17 +111,6 @@ struct NotesView: View {
                 }
             }
             .navigationTitle("")
-            .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("Notes")
-                        .font(.system(size: 34, weight: .black, design: .rounded))
-                        .italic()
-                        .foregroundStyle(
-                            LinearGradient(colors: [.blue, .purple, .pink], startPoint: .leading, endPoint: .trailing)
-                        )
-                        .accessibilityIdentifier("notes_header")
-                }
-            }
         }
     }
     
